@@ -1,0 +1,89 @@
+{% include "header.html" %}
+
+            <!-- Page Content Start -->
+            <!-- ================== -->
+
+            <div class="wraper container-fluid">
+                <div class="page-title"> 
+                    <h3 class="title">Settings</h3> 
+                </div>
+
+                <!-- Modals Examples -->
+                <div class="row"> 
+                    <div class="col-md-12"> 
+                        <div class="panel panel-default"> 
+                            <table class="table"> 
+
+                                <tbody> 
+                                    <tr> 
+                                        <td class="middle-align" style="width:25%;"><strong>First Name</strong></td> 
+                                        <td>{{user.first_name}}</td>
+                                    </tr>
+                                    <tr> 
+                                        <td class="middle-align" style="width:25%;"><strong>Last Name</strong></td> 
+                                        <td>{{user.last_name}}</td>
+                                    </tr>	
+                                    <tr> 
+                                        <td class="middle-align" style="width:25%;"><strong>School Name</strong></td> 
+                                        <td>{{profile_details.schoolname}}</td>
+                                    </tr>									
+                                    <tr> 
+                                        <td class="middle-align" style="width:25%;"><strong>Address</strong></td> 
+                                        <td>{{profile_details.address}}</td>
+                                    </tr>
+                                    <tr> 
+                                        <td class="middle-align" style="width:25%;"><strong>City</strong></td> 
+                                        <td>{{profile_details.city}}</td>
+                                    </tr>
+                                    <tr> 
+                                        <td class="middle-align" style="width:25%;"><strong>Email</strong></td> 
+                                        <td>{{user.email}}</td>
+                                    </tr>
+                                    <tr> 
+                                        <td class="middle-align" style="width:25%;"><strong>Mobile</strong></td> 
+                                        <td>{{profile_details.mobile}}</td>
+                                    </tr>	
+                                    <tr> 
+                                        <td class="middle-align" style="width:25%;">
+										</td> 
+                                        <td>&nbsp;</td> 
+                                    </tr>										
+                                </tbody> 
+                            </table> 
+                        </div> <!-- Panel -->
+                    </div> <!-- Col -->
+                </div> <!-- Row -->
+
+            </div>
+            <!-- Page Content Ends -->
+            <!-- ================== -->
+    {% include "footer.html" %}
+
+
+
+        </section>
+        <!-- Main Content Ends -->
+            
+
+
+
+
+
+
+        <!-- js placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/pace.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+
+        <!-- Modal-Effect -->
+        <script src="assets/modal-effect/js/classie.js"></script>
+        <script src="assets/modal-effect/js/modalEffects.js"></script>
+
+
+        <script src="js/jquery.app.js"></script>
+
+
+    </body>
+</html>

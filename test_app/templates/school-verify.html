@@ -1,0 +1,32 @@
+
+        {% include "header.html" %}
+        <title>Pariksha - Verify Your Email!</title>
+        <div class="wrapper-page animated fadeInDown">
+
+            <div class="ex-page-content animated flipInX text-center">
+                <h2>Verify Your Email!</h1>
+				<p>A verification email has been sent to <strong>{{email}}</strong>. <br>Enter the verification code you received into the space below then click &apos;Submit&apos; to continue.
+				</p>
+                <br>
+                <p>Verificatin code</p>
+                    <form action="/validate_code/" method="get">
+                <div class="row">
+                    <div class="input-group">
+                        <input type="hidden" value="{{email}}" name="email">
+                        <input type="hidden" value="{{password}}" name="password">
+                        <input type="text" class="form-control" name="code">
+                        <span class="input-group-btn">
+                            <a href="#"><button class="btn btn-primary" type="submit">Submit</button></a>
+                          </span>
+
+                    </div>
+                </div><br>
+                    </form>
+                <a class="btn btn-purple" href="school-index.html"> Resend Confirmation Email</a>
+            </div>
+            
+        </div>
+
+    
+  </body>
+</html>

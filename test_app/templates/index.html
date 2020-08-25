@@ -1,0 +1,43 @@
+{% include "header.html" %}
+
+
+            <!-- Page Content Start -->
+            <!-- ================== -->
+
+            <div class="wraper container-fluid">
+                <div class="page-title"> 
+                    <h3 class="title">Welcome {{user.first_name}}, {{user.last_name}}</h3>
+                </div>
+            </div>
+            <!-- Page Content Ends -->
+            <!-- ================== -->
+{% include "footer.html" %}
+
+
+
+        </section>
+        <!-- Main Content Ends -->
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+        /* ==============================================
+             Counter Up
+             =============================================== */
+            jQuery(document).ready(function($) {
+                $('.counter').counterUp({
+                    delay: 100,
+                    time: 1200
+                });
+            });
+        </script>
+    
+
+    </body>
+</html>
